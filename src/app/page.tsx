@@ -1,11 +1,24 @@
 import Image from "next/image";
+import { styled } from "@mui/zero-runtime";
 import styles from "./page.module.css";
 import { ColorBadge } from "@/components/Badge";
 import Button from "@mui/material/Button";
 
+const Main = styled("main")({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "6rem",
+  minHeight: "100vh",
+  "& .disabled": {
+    color: "red",
+  },
+});
+
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <Main>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -94,6 +107,6 @@ export default function Home() {
           </p>
         </a>
       </div>
-    </main>
+    </Main>
   );
 }

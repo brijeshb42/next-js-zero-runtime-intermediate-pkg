@@ -13,15 +13,6 @@ const theme = extendTheme({
       defaultProps: {
         color: "primary",
       },
-      styleOverrides: {
-        root: ({ theme }) => ({
-          position: "absolute",
-          backgroundColor: (theme.vars || theme).palette.primary.main,
-        }),
-        badge: {
-          display: "block",
-        },
-      },
     },
   },
 });

@@ -1,3 +1,4 @@
+"use client";
 import Badge from "@mui/material/Badge";
 
 export function ColorBadge() {
